@@ -1,0 +1,4 @@
+# https://git-scm.com/docs/gitignore
+# ignore macos files,
+*.DS_Store
+Icon?

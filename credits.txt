@@ -1,0 +1,7 @@
+Thanks to Emmanuel Baranger ("Helijah") for the 3D models that were used as the basis for this aircraft's models.
+
+http://helijah.free.fr/flightgear/les-appareils/tigre/appareil.htm
+
+Picture used for draft chassis texture (TIGRE_chassis.png) derived from 
+https://commons.wikimedia.org/wiki/File:Eurocopter_EC_655_Tigre_(cropped).jpg
+by David Álvarez López [CC BY 2.0 (https://creativecommons.org/licenses/by/2.0)]
