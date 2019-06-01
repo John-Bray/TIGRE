@@ -54,6 +54,21 @@ defineProperty(          "TRPtitch",  globalPropertyf("sim/flightmodel2/engines/
 defineProperty(          "TR_rpm", globalPropertyf("sim/cockpit2/engine/indicators/prop_speed_rpm[1]"))
 defineProperty(          "parking_brake", globalPropertyf("sim/cockpit2/controls/parking_brake_ratio"))
 
+-- for Head Mounted Display
+-- sim/graphics/view/pilots_head_x	float	y	meters	Position of pilot's head relative to CG, X (STBD)
+-- sim/graphics/view/pilots_head_y	float	y	meters	Position of pilot's head relative to CG, Y (UP)    2.20m
+-- sim/graphics/view/pilots_head_z	float	y	meters	Position of pilot's head relative to CG, Z (AFT) -2.60m
+-- these are measurements in METRES from the CG set in Planemaker
+defineProperty(             "viewPointSTBD", globalPropertyf("sim/graphics/view/pilots_head_x"))
+defineProperty(             "viewPointUP",      globalPropertyf("sim/graphics/view/pilots_head_y")) --   2.20m from zero 1.2 from CG
+defineProperty(             "viewPointAFT",    globalPropertyf("sim/graphics/view/pilots_head_z")) --  -2.60m
+
+--sim/aircraft/weight/acf_cgY_original	float	n	feet	This is the ORIGINAL reference point in PM in _feet_.  (UP) 1.00m
+--sim/aircraft/weight/acf_cgZ_original	float	n	feet	This is the ORIGINAL reference point in PM in _feet_. (AFT) 0.00m
+--WTF ????? FEET??
+defineProperty(             "acf_cgY_original", globalPropertyf("sim/aircraft/weight/acf_cgY_original")) -- (UP) 1.00m
+defineProperty(             "acf_cgZ_original", globalPropertyf("sim/aircraft/weight/acf_cgZ_original")) --  (AFT) 0.00m
+
 
 --createProp("jb/sasl/hoverMode", "int", 0);
 --defineProperty("jb_hoverMode",   globalPropertyi("jb/sasl/hoverMode"))

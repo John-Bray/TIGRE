@@ -154,7 +154,7 @@ P _gear/0/_lonE -20.0
 P _gear/0/_lonN -20.0
 P _gear/0/_lonR 0.0
 P _gear/0/_scon 11979.852539062
-P _gear/0/_stat_def 0.409184873
+P _gear/0/_stat_def 0.409184933
 P _gear/0/_steerdeg_hispeed 0.0
 P _gear/0/_steerdeg_lospeed 0.0
 P _gear/0/_strut_comp 0.0
@@ -188,7 +188,7 @@ P _gear/1/_lonE -20.0
 P _gear/1/_lonN -20.0
 P _gear/1/_lonR 0.0
 P _gear/1/_scon 11979.852539062
-P _gear/1/_stat_def 0.409184873
+P _gear/1/_stat_def 0.409184933
 P _gear/1/_steerdeg_hispeed 0.0
 P _gear/1/_steerdeg_lospeed 0.0
 P _gear/1/_strut_comp 0.0
@@ -16628,7 +16628,7 @@ P _prop/1/_des_kts_acf 150.0
 P _prop/1/_des_rpm_prp 2000.0
 P _prop/1/_max_AOA_deg 90.0
 P _prop/1/_max_pitch 12.500000000
-P _prop/1/_min_pitch -6.300000191
+P _prop/1/_min_pitch -8.500000000
 P _prop/1/_num_blades 3.0
 P _prop/1/_prop_clutch_EQ 0
 P _prop/1/_prop_dir -1.0
@@ -21414,7 +21414,7 @@ P acf/_nom_bat_volt 26.0
 P acf/_nom_fuelP 30.0
 P acf/_nom_gen_volt 28.0
 P acf/_nom_oilP 115.0
-P acf/_notes 2019-05-30 vB01
+P acf/_notes 2019-06-01 vB02
 P acf/_num_batteries 1
 P acf/_num_braking_wheels 0.0
 P acf/_num_buses 1
