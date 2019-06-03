@@ -22,6 +22,11 @@ createCommand("jb/sasl/iPads/toggle", "show_hide_iPads") -- jb/sasl/iPads/visibl
 createCommand("jb/sasl/yawDamper/toggle", "auto pedals ON/OFF")  -- jb_yawControl
 createCommand("jb/sasl/hud/toggle", "show hide FlightPathMarker") -- jb/sasl/Hud/hidden
 
+createCommand("jb/sasl/view/tilt_right", "head tilt to right") -- sim/graphics/view/pilots_head_phi﻿﻿﻿﻿﻿﻿    float    y    degrees    Position of the pilot's head roll﻿﻿﻿﻿﻿﻿﻿﻿﻿
+createCommand("jb/sasl/view/tilt_left", "head tilt to left")
+defineProperty(                 "headRoll",  globalPropertyf("sim/graphics/view/pilots_head_phi"))
+
+
 defineProperty("runTime",  globalPropertyf("sim/time/total_running_time_sec"))
 lastCommandClick = get(runTime)
 

@@ -45,6 +45,22 @@ function update()
 	end
 	registerCommandHandler(yawToggle, 0, yawToggle_handler)	--  CTRL Y 
 	
+	--createCommand("jb/sasl/view/tilt_right", "head tilt to right") -- sim/graphics/view/pilots_head_phi﻿﻿﻿﻿﻿﻿    float    y    degrees    Position of the pilot's head roll﻿﻿﻿﻿﻿﻿﻿﻿﻿	
+	tiltHeadRight = findCommand("jb/sasl/view/tilt_right")  
+	function tiltHeadRight_handler(phase)	-- happens too fast !!!!!!!
+		if 1 == phase and (get(runTime) - lastCommandClick ) > 0.5 then
+				set(headRoll, get(headRoll)+10) 
+		end
+	end
+	registerCommandHandler(tiltHeadRight, 0, tiltHeadRight_handler)	--
+	
+	tiltHeadLeft = findCommand("jb/sasl/view/tilt_left")  
+	function tiltHeadLeft_handler(phase)	-- happens too fast !!!!!!!
+		if 1 == phase and (get(runTime) - lastCommandClick ) > 0.5 then
+				set(headRoll, get(headRoll)-10) 
+		end
+	end
+	registerCommandHandler(tiltHeadLeft, 0, tiltHeadLeft_handler)	--
 	
 	
 	
