@@ -154,7 +154,7 @@ P _gear/0/_lonE -20.0
 P _gear/0/_lonN -20.0
 P _gear/0/_lonR 0.0
 P _gear/0/_scon 11979.852539062
-P _gear/0/_stat_def 0.409184873
+P _gear/0/_stat_def 0.409184963
 P _gear/0/_steerdeg_hispeed 0.0
 P _gear/0/_steerdeg_lospeed 0.0
 P _gear/0/_strut_comp 0.0
@@ -188,7 +188,7 @@ P _gear/1/_lonE -20.0
 P _gear/1/_lonN -20.0
 P _gear/1/_lonR 0.0
 P _gear/1/_scon 11979.852539062
-P _gear/1/_stat_def 0.409184873
+P _gear/1/_stat_def 0.409184963
 P _gear/1/_steerdeg_hispeed 0.0
 P _gear/1/_steerdeg_lospeed 0.0
 P _gear/1/_strut_comp 0.0
@@ -224,7 +224,7 @@ P _gear/4/_lonE -30.0
 P _gear/4/_lonN -30.0
 P _gear/4/_lonR 0.0
 P _gear/4/_scon 3194.627197266
-P _gear/4/_stat_def 0.795734286
+P _gear/4/_stat_def 0.795734465
 P _gear/4/_steerdeg_hispeed 0.0
 P _gear/4/_steerdeg_lospeed 0.0
 P _gear/4/_strut_comp 0.0
@@ -15135,7 +15135,7 @@ P _part/89/_part_specs_invis 1
 P _part/89/_part_tex 0
 P _part/89/_part_the 0.0
 P _part/89/_part_x 0.0
-P _part/89/_part_y 1.398062944
+P _part/89/_part_y 1.398063183
 P _part/89/_part_z 19.947505951
 P _part/89/_patt_con 0
 P _part/89/_patt_prt 0
@@ -21425,7 +21425,7 @@ P acf/_nom_bat_volt 26.0
 P acf/_nom_fuelP 30.0
 P acf/_nom_gen_volt 28.0
 P acf/_nom_oilP 115.0
-P acf/_notes Version 2019-06-04 vB05
+P acf/_notes Version 2019-06-04 vB06
 P acf/_num_batteries 1
 P acf/_num_braking_wheels 0.0
 P acf/_num_buses 1
@@ -22062,7 +22062,7 @@ PANEL_2D_BEGIN
 PANEL_2D_END
 PANEL_3D_BEGIN
 rad_DME_N12_GA DME_N12_GA.png
-  POS 601.000000 35.000000
+  POS 638.000000 22.428572
   DATAREF 
   SIZE 1.500000
   LIGHT_MODE MECHANICAL
@@ -22216,15 +22216,6 @@ gen_rotary ScreenButton
   CURSOR BUTTON
   CLICK_DX 0
   CLICK_DY 0
-
-rad_GPS_430_2d Garmin_430_2d.png
-  POS 854.000000 -67.500000
-  DATAREF 
-  SIZE 0.400000
-  LIGHT_MODE MECHANICAL
-  LIGHT_RHEOSTAT 0
-  KEY_FRAME 0.000000 0.000000 1.000000
-  KEY_FRAME 1.000000 1.000000
 
 gen_rotary ScreenButton
   POS 13.000000 174.500000
@@ -22393,7 +22384,7 @@ EFIS_glideslope el_glideslope.png
   KEY_FRAME 1.000000 1.000000
 
 but_brakes but_brakes.png
-  POS 128.000000 570.000000
+  POS 128.000000 570.500000
   DATAREF 
   SIZE 1.800000
   LIGHT_MODE MECHANICAL
@@ -22497,7 +22488,7 @@ gen_pointer gen_pointer.png
   OFFSET 0.000000
 
 gen_pointer gen_pointerV.png
-  POS 84.000000 726.000000
+  POS 82.000000 726.000000
   IMAGE gen_pointerV
   DATAREF sim/flightmodel2/engines/prop_pitch_deg[0]
   LIGHT_MODE MECHANICAL
@@ -22509,7 +22500,7 @@ gen_pointer gen_pointerV.png
   OFFSET 0.000000
 
 gen_pointer gen_pointerV.png
-  POS 84.000000 647.000000
+  POS 82.000000 647.000000
   IMAGE gen_pointerV
   DATAREF sim/cockpit2/engine/actuators/throttle_ratio[0]
   LIGHT_MODE MECHANICAL
@@ -22546,5 +22537,14 @@ gen_pie gen_pieTq.png
   HI_YELLOW 340.000000
   CLICK_RADIUS 3.000000
   OFFSET 40.000000
+
+rad_CDU739 CDU739_screen.png
+  POS 948.000000 -83.000000
+  DATAREF 
+  SIZE 0.500000
+  LIGHT_MODE MECHANICAL
+  LIGHT_RHEOSTAT 0
+  KEY_FRAME 0.000000 0.000000 1.000000
+  KEY_FRAME 1.000000 1.000000
 
 PANEL_3D_END
