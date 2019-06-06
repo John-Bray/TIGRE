@@ -1,7 +1,7 @@
 size={256, 256}
 
 function draw() 
-	drawAll(components)                                                    --  screen #1
+	drawAll(components)                                                    --  screen #1 (Engines )
 	local currentEng_kW_A			= math.floor( 0.5+ (get(engWattsA)/1000))
 	local currentEng_kW_B			= math.floor( 0.5+ (get(engWattsB)/1000))
 	local currentAlt = math.floor(get(altitude_m)*  3.2808399)	

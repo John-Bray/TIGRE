@@ -2,6 +2,14 @@ size = { 1024, 1024 }  --We declare here the image size we are using
 panelWidth3d  = 1024  -- I don't know why, but without these lines you cannot get the coords to work right
 panelHeight3d = 1024
 
+defineProperty("screen1_mode",createGlobalPropertyf("jb/sasl/MFD/1/mode"))  -- 0=off, 1= PFD,  2=NAV,  3=AC (engines} or whatever, etc
+set(screen1_mode, 1)
+
+defineProperty("screen2_mode",createGlobalPropertyf("jb/sasl/MFD/2/mode"))  
+set(screen2_mode,3)
+
+
+
 defineProperty("iPad1_mode",createGlobalPropertyf("jb/sasl/iPads/1/mode"))  -- 0=off, 1= EFIS or whatever, etc
 set(iPad1_mode, -1)
 
@@ -146,24 +154,21 @@ font_led_32=loadFont('custom avionics/JB_LED_7S_32.fnt')
 
 components = {
 
-	HMD             {position={      0,    0, 256, 256} },
-	screen_1       {position={     0, 768, 256, 256} },
+	commands    {position={     0, 256, 256, 110} },
+	HMD             {position={      0,     0,   256, 256} },
+	Radios           {position={ 256,    0, 440, 256} },
+	screen_1       {position={     0, 768, 256, 256} }
 	
-	
-	Radios           {position={  256,     0, 440, 256} },
-
-	iPad0             {position={      0,  416, 256, 192} },
-	iPad1             {position={  256,  416, 256, 192} },
-	iPad2             {position={  512,  416, 256, 192} },
-	iPad3             {position={  756,  416, 256, 192} },
-	
-	
-	commands     {position={      0,  256, 256, 110} },
-	barometer      {position={  256,      0, 440, 256} }
 	
 
 }
 
+	--iPad0             {position={      0,  416, 256, 192} },
+	--iPad1             {position={  256,  416, 256, 192} },
+--	iPad2             {position={  512,  416, 256, 192} },
+--	iPad3             {position={  756,  416, 256, 192} },
+-- barometer      {position={  256,      0, 440, 256} }
+	
 set(panelLight1, 1)
 set(panelLight2, 1)
 
