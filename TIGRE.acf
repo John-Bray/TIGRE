@@ -154,7 +154,7 @@ P _gear/0/_lonE -20.0
 P _gear/0/_lonN -20.0
 P _gear/0/_lonR 0.0
 P _gear/0/_scon 11979.852539062
-P _gear/0/_stat_def 0.409184963
+P _gear/0/_stat_def 0.409184903
 P _gear/0/_steerdeg_hispeed 0.0
 P _gear/0/_steerdeg_lospeed 0.0
 P _gear/0/_strut_comp 0.0
@@ -188,7 +188,7 @@ P _gear/1/_lonE -20.0
 P _gear/1/_lonN -20.0
 P _gear/1/_lonR 0.0
 P _gear/1/_scon 11979.852539062
-P _gear/1/_stat_def 0.409184963
+P _gear/1/_stat_def 0.409184903
 P _gear/1/_steerdeg_hispeed 0.0
 P _gear/1/_steerdeg_lospeed 0.0
 P _gear/1/_strut_comp 0.0
@@ -21181,7 +21181,7 @@ P acf/_fuel_2/1 0.0
 P acf/_fuel_2/2 0.0
 P acf/_fuel_2/count 3
 P acf/_fuel_intro_time_jet 11.0
-P acf/_fuel_intro_time_prop 51.0
+P acf/_fuel_intro_time_prop 99.989997864
 P acf/_gear_EQ 1
 P acf/_gear_can_ret_on_ground 0
 P acf/_gear_extend_protect 0
@@ -21447,7 +21447,7 @@ P acf/_nom_bat_volt 26.0
 P acf/_nom_fuelP 30.0
 P acf/_nom_gen_volt 28.0
 P acf/_nom_oilP 115.0
-P acf/_notes Version 2019-06-07 vB09
+P acf/_notes Version 2019-06-08 vB10
 P acf/_num_batteries 1
 P acf/_num_braking_wheels 0.0
 P acf/_num_buses 1
@@ -21744,7 +21744,7 @@ P acf/_slung_len 32.808399200
 P acf/_snd_N1 100.0
 P acf/_snd_kias 150.0
 P acf/_snd_rpm_eng 2500.0
-P acf/_snd_rpm_prp 420.0
+P acf/_snd_rpm_prp 330.0
 P acf/_solar_cover_part 0.0
 P acf/_solar_eta 0.0
 P acf/_speedbrake_ext_time 1.0
