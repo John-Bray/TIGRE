@@ -155,19 +155,19 @@ font_led_32=loadFont('custom avionics/JB_LED_7S_32.fnt')
 components = {
 
 	commands    {position={     0, 256, 256, 110} },
-	HMD             {position={      0,     0,   256, 256} },
-	Radios           {position={ 256,    0, 440, 256} },
-	screen_1       {position={     0, 768, 256, 256} }
+	HMD             {position={      0,     0,   512, 512} },
+	Radios           {position={ 512,    256, 440, 256} },
+	screen_1       {position={     0, 768, 256, 256} },
 	
+	barometer      {position={  512, 256, 440, 256} }
 	
 
 }
 
-	--iPad0             {position={      0,  416, 256, 192} },
-	--iPad1             {position={  256,  416, 256, 192} },
+--iPad0             {position={      0,  416, 256, 192} },
+--iPad1             {position={  256,  416, 256, 192} },
 --	iPad2             {position={  512,  416, 256, 192} },
 --	iPad3             {position={  756,  416, 256, 192} },
--- barometer      {position={  256,      0, 440, 256} }
 	
 set(panelLight1, 1)
 set(panelLight2, 1)

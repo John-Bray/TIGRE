@@ -17,8 +17,8 @@ function draw()
 	
 
 	
-	drawText(font_Sans12,   30, 240, 'Tq', 1,1,0.5)
-	drawText(font_Sans12, 215, 240, 'Tq', 1,1,0.5)
+	drawText(font_Sans12,   30, 235, 'Tq', 1,1,0.5)
+	drawText(font_Sans12, 215, 235, 'Tq', 1,1,0.5)
 	
 	textForPrinting =  TqPercentA .. '% '
 	drawText(font_Sans12,   25, 215, textForPrinting, 1,1,1)

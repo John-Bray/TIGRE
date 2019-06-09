@@ -154,7 +154,7 @@ P _gear/0/_lonE -20.0
 P _gear/0/_lonN -20.0
 P _gear/0/_lonR 0.0
 P _gear/0/_scon 11979.852539062
-P _gear/0/_stat_def 0.409184903
+P _gear/0/_stat_def 0.409184873
 P _gear/0/_steerdeg_hispeed 0.0
 P _gear/0/_steerdeg_lospeed 0.0
 P _gear/0/_strut_comp 0.0
@@ -188,7 +188,7 @@ P _gear/1/_lonE -20.0
 P _gear/1/_lonN -20.0
 P _gear/1/_lonR 0.0
 P _gear/1/_scon 11979.852539062
-P _gear/1/_stat_def 0.409184903
+P _gear/1/_stat_def 0.409184873
 P _gear/1/_steerdeg_hispeed 0.0
 P _gear/1/_steerdeg_lospeed 0.0
 P _gear/1/_strut_comp 0.0
@@ -224,7 +224,7 @@ P _gear/4/_lonE -30.0
 P _gear/4/_lonN -30.0
 P _gear/4/_lonR 0.0
 P _gear/4/_scon 3194.627197266
-P _gear/4/_stat_def 0.795734406
+P _gear/4/_stat_def 0.795734227
 P _gear/4/_steerdeg_hispeed 0.0
 P _gear/4/_steerdeg_lospeed 0.0
 P _gear/4/_strut_comp 0.0
@@ -15157,7 +15157,7 @@ P _part/89/_part_specs_invis 1
 P _part/89/_part_tex 0
 P _part/89/_part_the 0.0
 P _part/89/_part_x 0.0
-P _part/89/_part_y 1.398063183
+P _part/89/_part_y 1.398062944
 P _part/89/_part_z 19.947505951
 P _part/89/_patt_con 0
 P _part/89/_patt_prt 0
@@ -21447,7 +21447,7 @@ P acf/_nom_bat_volt 26.0
 P acf/_nom_fuelP 30.0
 P acf/_nom_gen_volt 28.0
 P acf/_nom_oilP 115.0
-P acf/_notes Version 2019-06-08 vB10
+P acf/_notes Version 2019-06-09 vB10
 P acf/_num_batteries 1
 P acf/_num_braking_wheels 0.0
 P acf/_num_buses 1
@@ -22083,17 +22083,8 @@ PROPERTIES_END
 PANEL_2D_BEGIN
 PANEL_2D_END
 PANEL_3D_BEGIN
-rad_DME_N12_GA DME_N12_GA.png
-  POS 638.000000 22.428572
-  DATAREF 
-  SIZE 1.500000
-  LIGHT_MODE MECHANICAL
-  LIGHT_RHEOSTAT 0
-  KEY_FRAME 0.000000 0.000000 1.000000
-  KEY_FRAME 1.000000 1.000000
-
 ins_slip_inverted slip_inverted.png
-  POS 368.428558 22.000000
+  POS 927.714172 -238.000000
   DATAREF 
   SIZE 2.000000
   LIGHT_MODE MECHANICAL
@@ -22102,7 +22093,7 @@ ins_slip_inverted slip_inverted.png
   KEY_FRAME 1.000000 1.000000
 
 gen_rotary ScreenButton
-  POS 273.000000 331.500000
+  POS 266.714264 492.928558
   IMAGE leftButton
   DATAREF jb/sasl/iPads/1/mode[10]
   SHOW_LESS 0.000000 [0]
@@ -22125,7 +22116,7 @@ gen_rotary ScreenButton
   CLICK_DY 0
 
 gen_rotary ScreenButton
-  POS 494.000000 331.500000
+  POS 498.857147 490.928589
   IMAGE rightButton
   DATAREF jb/sasl/iPads/1/mode[10]
   SHOW_LESS 0.000000 [0]
@@ -22148,7 +22139,7 @@ gen_rotary ScreenButton
   CLICK_DY 0
 
 gen_rotary ScreenButton
-  POS 785.000000 331.500000
+  POS 783.571411 492.500000
   IMAGE leftButton
   DATAREF jb/sasl/iPads/1/mode[10]
   SHOW_LESS 0.000000 [0]
@@ -22171,7 +22162,7 @@ gen_rotary ScreenButton
   CLICK_DY 0
 
 gen_rotary ScreenButton
-  POS 529.000000 331.500000
+  POS 528.714294 491.214294
   IMAGE leftButton
   DATAREF jb/sasl/iPads/1/mode[10]
   SHOW_LESS 0.000000 [0]
@@ -22194,7 +22185,7 @@ gen_rotary ScreenButton
   CLICK_DY 0
 
 gen_rotary ScreenButton
-  POS 751.000000 331.500000
+  POS 753.000000 492.500000
   IMAGE rightButton
   DATAREF jb/sasl/iPads/1/mode[10]
   SHOW_LESS 0.000000 [0]
@@ -22217,7 +22208,7 @@ gen_rotary ScreenButton
   CLICK_DY 0
 
 gen_rotary ScreenButton
-  POS 233.000000 331.500000
+  POS 239.857147 493.071442
   IMAGE rightButton
   DATAREF jb/sasl/iPads/1/mode[10]
   SHOW_LESS 0.000000 [0]
@@ -22240,7 +22231,7 @@ gen_rotary ScreenButton
   CLICK_DY 0
 
 gen_rotary ScreenButton
-  POS 13.000000 174.500000
+  POS 24.000000 282.785706
   IMAGE QHI-button
   DATAREF jb/sasl/afcs/yawControl[10]
   SHOW_LESS 0.000000 [0]
@@ -22263,7 +22254,7 @@ gen_rotary ScreenButton
   CLICK_DY 0
 
 but_rotor_brake but_rotorbrake.png
-  POS 659.000000 320.000000
+  POS 671.000000 441.000000
   DATAREF 
   LIGHT_MODE MECHANICAL
   LIGHT_RHEOSTAT 0
@@ -22272,7 +22263,7 @@ but_rotor_brake but_rotorbrake.png
   KEY_FRAME 1.000000 1.000000
 
 but_starter_HM but_starter_HM.png
-  POS 711.000000 320.000000
+  POS 723.000000 441.000000
   DATAREF 
   LIGHT_MODE MECHANICAL
   LIGHT_RHEOSTAT 0
@@ -22281,7 +22272,7 @@ but_starter_HM but_starter_HM.png
   KEY_FRAME 1.000000 1.000000
 
 but_fuel_off_any but_fuel_01.png
-  POS 559.000000 263.000000
+  POS 600.000000 375.000000
   DATAREF 
   LIGHT_MODE MECHANICAL
   LIGHT_RHEOSTAT 0
@@ -22290,7 +22281,7 @@ but_fuel_off_any but_fuel_01.png
   KEY_FRAME 1.000000 1.000000
 
 but_battery but_battery.png
-  POS 565.000000 320.000000
+  POS 567.000000 441.000000
   DATAREF 
   LIGHT_MODE MECHANICAL
   LIGHT_RHEOSTAT 0
@@ -22298,7 +22289,7 @@ but_battery but_battery.png
   KEY_FRAME 1.000000 1.000000
 
 but_fuel_pump_tank but_fuelpump_tank.p
-  POS 607.000000 320.000000
+  POS 619.000000 441.000000
   DATAREF 
   LIGHT_MODE MECHANICAL
   LIGHT_RHEOSTAT 0
@@ -22306,7 +22297,7 @@ but_fuel_pump_tank but_fuelpump_tank.p
   KEY_FRAME 1.000000 1.000000
 
 but_igniter but_igniter.png
-  POS 615.000000 258.000000
+  POS 656.000000 370.000000
   DATAREF 
   LIGHT_MODE MECHANICAL
   LIGHT_RHEOSTAT 0
@@ -22317,13 +22308,14 @@ EFIS_map_s_BC map_s_BC.png
   POS 897.000000 626.000000
   DATAREF 
   SIZE 1.180000
+  LOCKED
   LIGHT_MODE MECHANICAL
   LIGHT_RHEOSTAT 0
   KEY_FRAME 0.000000 0.000000 1.000000
   KEY_FRAME 1.000000 1.000000
 
 EFIS_horizon el_horizon.png
-  POS 374.000000 643.000000
+  POS 374.000000 635.000000
   DATAREF 
   SIZE 1.500000
   LIGHT_MODE MECHANICAL
@@ -22332,7 +22324,7 @@ EFIS_horizon el_horizon.png
   KEY_FRAME 1.000000 1.000000
 
 EFIS_hsi_semiround el_hsi_semi_Circle.
-  POS 371.000000 541.000000
+  POS 371.000000 536.000000
   DATAREF 
   SIZE 1.200000
   LIGHT_MODE MECHANICAL
@@ -22341,7 +22333,7 @@ EFIS_hsi_semiround el_hsi_semi_Circle.
   KEY_FRAME 1.000000 1.000000
 
 EFIS_hsi_tape el_hsi_tape.png
-  POS 382.500000 753.000000
+  POS 375.500000 743.000000
   DATAREF 
   LIGHT_MODE MECHANICAL
   LIGHT_RHEOSTAT 0
@@ -22365,7 +22357,7 @@ EFIS_altitude el_altitude.png
   KEY_FRAME 1.000000 1.000000
 
 EFIS_airspeed el_airspeed.png
-  POS 280.000000 646.000000
+  POS 280.000000 637.000000
   DATAREF 
   LIGHT_MODE MECHANICAL
   LIGHT_RHEOSTAT 0
@@ -22373,7 +22365,7 @@ EFIS_airspeed el_airspeed.png
   KEY_FRAME 1.000000 1.000000
 
 EFIS_TAS_GS_wind el_TAS_GS_wind.png
-  POS 293.000000 739.000000
+  POS 291.000000 725.000000
   DATAREF 
   SIZE 1.200000
   LIGHT_MODE MECHANICAL
@@ -22382,7 +22374,7 @@ EFIS_TAS_GS_wind el_TAS_GS_wind.png
   KEY_FRAME 1.000000 1.000000
 
 EFIS_localizer el_localizer.png
-  POS 372.000000 564.000000
+  POS 372.000000 559.000000
   DATAREF 
   LIGHT_MODE MECHANICAL
   LIGHT_RHEOSTAT 0
@@ -22390,7 +22382,7 @@ EFIS_localizer el_localizer.png
   KEY_FRAME 1.000000 1.000000
 
 EFIS_psi_disp el_heading.png
-  POS 374.000000 732.000000
+  POS 373.500000 722.000000
   DATAREF 
   LIGHT_MODE MECHANICAL
   LIGHT_RHEOSTAT 0
@@ -22415,15 +22407,16 @@ but_brakes but_brakes.png
   KEY_FRAME 1.000000 1.000000
 
 EFIS_DME_voradf1 el_DME_voradf1.png
-  POS 801.000000 736.000000
+  POS 799.000000 738.666626
   DATAREF 
+  SIZE 1.500000
   LIGHT_MODE MECHANICAL
   LIGHT_RHEOSTAT 0
   KEY_FRAME 0.000000 0.000000 1.000000
   KEY_FRAME 1.000000 1.000000
 
 EFIS_hsi_fullround el_hsi_full_Circle.
-  POS 639.000000 640.000000
+  POS 633.000000 655.333313
   DATAREF 
   LIGHT_MODE MECHANICAL
   LIGHT_RHEOSTAT 0
@@ -22431,7 +22424,7 @@ EFIS_hsi_fullround el_hsi_full_Circle.
   KEY_FRAME 1.000000 1.000000
 
 gen_pie gen_pieTq.png
-  POS 35.500000 733.500000
+  POS 35.500000 725.000000
   DATAREF sim/cockpit2/engine/indicators/power_watts[0]
   LIGHT_MODE MECHANICAL
   LIGHT_RHEOSTAT 0
@@ -22445,7 +22438,7 @@ gen_pie gen_pieTq.png
   OFFSET 24.000000
 
 gen_pie gen_pieTq.png
-  POS 220.000000 733.000000
+  POS 220.000000 725.000000
   DATAREF sim/cockpit2/engine/indicators/power_watts[1]
   LIGHT_MODE MECHANICAL
   LIGHT_RHEOSTAT 0
@@ -22459,7 +22452,7 @@ gen_pie gen_pieTq.png
   OFFSET 24.000000
 
 gen_pie gen_pieTq.png
-  POS 35.000000 656.000000
+  POS 35.000000 645.000000
   DATAREF sim/cockpit2/engine/indicators/N2_percent[0]
   LIGHT_MODE MECHANICAL
   LIGHT_RHEOSTAT 0
@@ -22473,7 +22466,7 @@ gen_pie gen_pieTq.png
   OFFSET 24.000000
 
 gen_pie gen_pieTq.png
-  POS 220.000000 656.000000
+  POS 220.000000 645.000000
   DATAREF sim/cockpit2/engine/indicators/N2_percent[0]
   LIGHT_MODE MECHANICAL
   LIGHT_RHEOSTAT 0
@@ -22522,7 +22515,7 @@ gen_pointer gen_pointerV.png
   OFFSET 0.000000
 
 gen_pointer gen_pointerV.png
-  POS 82.000000 647.000000
+  POS 82.000000 645.000000
   IMAGE gen_pointerV
   DATAREF sim/cockpit2/engine/actuators/throttle_ratio[0]
   LIGHT_MODE MECHANICAL
@@ -22534,7 +22527,7 @@ gen_pointer gen_pointerV.png
   OFFSET 0.000000
 
 gen_pointer gen_pointerV.png
-  POS 179.000000 647.000000
+  POS 179.000000 645.000000
   IMAGE gen_pointerV
   DATAREF sim/cockpit2/engine/actuators/throttle_ratio[1]
   LIGHT_MODE MECHANICAL
@@ -22564,6 +22557,130 @@ rad_CDU739 CDU739_screen.png
   POS 948.000000 -83.000000
   DATAREF 
   SIZE 0.500000
+  LIGHT_MODE MECHANICAL
+  LIGHT_RHEOSTAT 0
+  KEY_FRAME 0.000000 0.000000 1.000000
+  KEY_FRAME 1.000000 1.000000
+
+but_map_zoom_close but_map_zoom_close.
+  POS 798.000000 553.000000
+  DATAREF 
+  LIGHT_MODE MECHANICAL
+  LIGHT_RHEOSTAT 0
+  KEY_FRAME 0.000000 0.000000 1.000000
+  KEY_FRAME 1.000000 1.000000
+
+but_map_mode but_map_mode.png
+  POS 988.000000 544.000000
+  DATAREF 
+  LIGHT_MODE MECHANICAL
+  LIGHT_RHEOSTAT 0
+  KEY_FRAME 0.000000 0.000000 1.000000
+  KEY_FRAME 1.000000 1.000000
+
+rhe_OBS1_HM rhe_OBS_1_HM.png
+  POS 539.333313 535.000000
+  DATAREF 
+  LIGHT_MODE MECHANICAL
+  LIGHT_RHEOSTAT 0
+  KEY_FRAME 0.000000 0.000000 1.000000
+  KEY_FRAME 1.000000 1.000000
+
+rhe_OBS2_HM rhe_OBS_2_HM.png
+  POS 741.000000 535.000000
+  DATAREF 
+  LIGHT_MODE MECHANICAL
+  LIGHT_RHEOSTAT 0
+  KEY_FRAME 0.000000 0.000000 1.000000
+  KEY_FRAME 1.000000 1.000000
+
+rad_navcomadfFF_HM rad_navcomadf_HM.pn
+  POS 641.000000 551.000000
+  DATAREF 
+  LIGHT_MODE MECHANICAL
+  LIGHT_RHEOSTAT 0
+  KEY_FRAME 0.000000 0.000000 1.000000
+  KEY_FRAME 1.000000 1.000000
+
+ott_hdg_eng_HM ott_HDG_eng_HM.png
+  POS 716.500000 733.500000
+  DATAREF 
+  SIZE 1.200000
+  LIGHT_MODE MECHANICAL
+  LIGHT_RHEOSTAT 0
+  KEY_FRAME 0.000000 0.000000 1.000000
+  KEY_FRAME 1.000000 1.000000
+
+ott_OBS2_disp ott_disp_OBS2.png
+  POS 741.166687 572.500000
+  DATAREF 
+  LIGHT_MODE MECHANICAL
+  LIGHT_RHEOSTAT 0
+  KEY_FRAME 0.000000 0.000000 1.000000
+  KEY_FRAME 1.000000 1.000000
+
+ott_OBS1_disp ott_disp_OBS1.png
+  POS 539.500000 569.500000
+  DATAREF 
+  LIGHT_MODE MECHANICAL
+  LIGHT_RHEOSTAT 0
+  KEY_FRAME 0.000000 0.000000 1.000000
+  KEY_FRAME 1.000000 1.000000
+
+ott_AP_GA but_auto_AP_GA.png
+  POS 556.500000 733.500000
+  DATAREF 
+  SIZE 1.200000
+  LIGHT_MODE MECHANICAL
+  LIGHT_RHEOSTAT 0
+  KEY_FRAME 0.000000 0.000000 1.000000
+  KEY_FRAME 1.000000 1.000000
+
+ott_hdg_seldisp ott_seldisp_HDG.png
+  POS 636.000000 733.500000
+  DATAREF 
+  SIZE 1.500000
+  LIGHT_MODE MECHANICAL
+  LIGHT_RHEOSTAT 0
+  KEY_FRAME 0.000000 0.000000 1.000000
+  KEY_FRAME 1.000000 1.000000
+
+EFIS_DME_voradf2 el_DME_voradf2.png
+  POS 992.000000 740.000000
+  DATAREF 
+  SIZE 1.500000
+  LIGHT_MODE MECHANICAL
+  LIGHT_RHEOSTAT 0
+  KEY_FRAME 0.000000 0.000000 1.000000
+  KEY_FRAME 1.000000 1.000000
+
+EFIS_map_fix but_map_fix.png
+  POS 783.500000 528.000000
+  DATAREF 
+  LIGHT_MODE MECHANICAL
+  LIGHT_RHEOSTAT 0
+  KEY_FRAME 0.000000 0.000000 1.000000
+  KEY_FRAME 1.000000 1.000000
+
+EFIS_map_apt but_map_apt.png
+  POS 804.500000 528.000000
+  DATAREF 
+  LIGHT_MODE MECHANICAL
+  LIGHT_RHEOSTAT 0
+  KEY_FRAME 0.000000 0.000000 1.000000
+  KEY_FRAME 1.000000 1.000000
+
+EFIS_map_ndb but_map_ndb.png
+  POS 826.500000 528.000000
+  DATAREF 
+  LIGHT_MODE MECHANICAL
+  LIGHT_RHEOSTAT 0
+  KEY_FRAME 0.000000 0.000000 1.000000
+  KEY_FRAME 1.000000 1.000000
+
+EFIS_map_vor but_map_vor.png
+  POS 847.500000 528.000000
+  DATAREF 
   LIGHT_MODE MECHANICAL
   LIGHT_RHEOSTAT 0
   KEY_FRAME 0.000000 0.000000 1.000000
