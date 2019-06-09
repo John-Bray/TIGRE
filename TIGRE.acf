@@ -154,7 +154,7 @@ P _gear/0/_lonE -20.0
 P _gear/0/_lonN -20.0
 P _gear/0/_lonR 0.0
 P _gear/0/_scon 11979.852539062
-P _gear/0/_stat_def 0.409184873
+P _gear/0/_stat_def 0.409184963
 P _gear/0/_steerdeg_hispeed 0.0
 P _gear/0/_steerdeg_lospeed 0.0
 P _gear/0/_strut_comp 0.0
@@ -188,7 +188,7 @@ P _gear/1/_lonE -20.0
 P _gear/1/_lonN -20.0
 P _gear/1/_lonR 0.0
 P _gear/1/_scon 11979.852539062
-P _gear/1/_stat_def 0.409184873
+P _gear/1/_stat_def 0.409184963
 P _gear/1/_steerdeg_hispeed 0.0
 P _gear/1/_steerdeg_lospeed 0.0
 P _gear/1/_strut_comp 0.0
@@ -224,7 +224,7 @@ P _gear/4/_lonE -30.0
 P _gear/4/_lonN -30.0
 P _gear/4/_lonR 0.0
 P _gear/4/_scon 3194.627197266
-P _gear/4/_stat_def 0.795734227
+P _gear/4/_stat_def 0.795734406
 P _gear/4/_steerdeg_hispeed 0.0
 P _gear/4/_steerdeg_lospeed 0.0
 P _gear/4/_strut_comp 0.0
@@ -15157,7 +15157,7 @@ P _part/89/_part_specs_invis 1
 P _part/89/_part_tex 0
 P _part/89/_part_the 0.0
 P _part/89/_part_x 0.0
-P _part/89/_part_y 1.398062944
+P _part/89/_part_y 1.398063183
 P _part/89/_part_z 19.947505951
 P _part/89/_patt_con 0
 P _part/89/_patt_prt 0
@@ -21447,7 +21447,7 @@ P acf/_nom_bat_volt 26.0
 P acf/_nom_fuelP 30.0
 P acf/_nom_gen_volt 28.0
 P acf/_nom_oilP 115.0
-P acf/_notes Version 2019-06-09 vB10
+P acf/_notes Version 2019-06-09 vB11
 P acf/_num_batteries 1
 P acf/_num_braking_wheels 0.0
 P acf/_num_buses 1
@@ -22231,7 +22231,7 @@ gen_rotary ScreenButton
   CLICK_DY 0
 
 gen_rotary ScreenButton
-  POS 24.000000 282.785706
+  POS 128.999878 544.881042
   IMAGE QHI-button
   DATAREF jb/sasl/afcs/yawControl[10]
   SHOW_LESS 0.000000 [0]
@@ -22241,7 +22241,7 @@ gen_rotary ScreenButton
   LIGHT_RHEOSTAT 1
   KEY_FRAME 0.000000 1.000000 1.000000
   KEY_FRAME 1.000000 0.000000
-  TOOLTIP Go to Screen 1
+  TOOLTIP YawDamper
   DIGITS 2
   ROTARY_TYPE PUSH
   CLICK_RADIUS 20.000000
@@ -22685,5 +22685,15 @@ EFIS_map_vor but_map_vor.png
   LIGHT_RHEOSTAT 0
   KEY_FRAME 0.000000 0.000000 1.000000
   KEY_FRAME 1.000000 1.000000
+
+gen_text gen_text.png
+  POS 13.000000 448.000000
+  DATAREF 
+  LIGHT_MODE MECHANICAL
+  LIGHT_RHEOSTAT 0
+  KEY_FRAME 0.000000 0.000000 1.000000
+  KEY_FRAME 1.000000 1.000000
+  OFFSET_X 3
+  OFFSET_Y 0.000000
 
 PANEL_3D_END

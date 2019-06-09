@@ -38,7 +38,9 @@ function draw()
 	drawText(font_Sans12,   115, 120, 'FUEL', 1,1,0.5)
 	drawText(font_Sans12,   115, 105, currentfuelKg, 1,1,1)
 
-	
+	drawText(font_Sans10,   140, 34, 'YAW', 1,1,0.5)
+	drawText(font_Sans10,   140, 22, 'DAMPER', 1,1,0.5)
+
 	
 	
 	

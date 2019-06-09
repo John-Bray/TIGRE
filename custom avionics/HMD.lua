@@ -71,5 +71,24 @@ function draw() -- head mounted display
 		--drawText(font_Sans12,  30, 345, finalDestinationString ,0,1,0)
 	end -- of 	if countFMSEntries() > 0 
 	-- ========================================== GPS/FMS
+		
+	if get(IAS) < 60 and get(jb_yawControl) == 1 then
+			drawText(font_Sans12, 215, 30, 'YAW DAMPER ON [' .. get(jb_yawControl) .. ']', 0,1,0,1) 		
+		else
+			drawText(font_Sans12, 215, 30, 'YAW DAMPER OFF [' .. get(jb_yawControl) .. ']', 0,1,0,0.5) 		
+	end
 
+end
+
+
+function update()
+	local currentAirSpeed   =  math.floor(get(IAS) )
+	local currentPedals = get(pedals) 
+	local currentYawRate   = get(yawRate)
+	if currentAirSpeed < 60 and get(jb_yawControl) == 1 then
+		local maxYawRate = 60 - currentAirSpeed
+		local yawSpeedFactor = 0.0166 * (60 - currentAirSpeed) -- 1 to 0
+		local newPedals =  currentPedals - currentYawRate*0.001*yawSpeedFactor
+		set(pedals, newPedals)
+	end
 end
