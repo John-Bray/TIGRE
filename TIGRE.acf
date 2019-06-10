@@ -154,7 +154,7 @@ P _gear/0/_lonE -20.0
 P _gear/0/_lonN -20.0
 P _gear/0/_lonR 0.0
 P _gear/0/_scon 11979.852539062
-P _gear/0/_stat_def 0.409045845
+P _gear/0/_stat_def 0.409045994
 P _gear/0/_steerdeg_hispeed 0.0
 P _gear/0/_steerdeg_lospeed 0.0
 P _gear/0/_strut_comp 0.0
@@ -188,7 +188,7 @@ P _gear/1/_lonE -20.0
 P _gear/1/_lonN -20.0
 P _gear/1/_lonR 0.0
 P _gear/1/_scon 11979.852539062
-P _gear/1/_stat_def 0.409045845
+P _gear/1/_stat_def 0.409045994
 P _gear/1/_steerdeg_hispeed 0.0
 P _gear/1/_steerdeg_lospeed 0.0
 P _gear/1/_strut_comp 0.0
@@ -224,7 +224,7 @@ P _gear/4/_lonE -30.0
 P _gear/4/_lonN -30.0
 P _gear/4/_lonR 0.0
 P _gear/4/_scon 3194.627197266
-P _gear/4/_stat_def 0.796778262
+P _gear/4/_stat_def 0.796778321
 P _gear/4/_steerdeg_hispeed 0.0
 P _gear/4/_steerdeg_lospeed 0.0
 P _gear/4/_strut_comp 0.0
@@ -388,8 +388,8 @@ P _obja/1/_v10_att_y_acf_prt_ref 0.0
 P _obja/1/_v10_att_z_acf_prt_ref 0.0
 P _obja/1/_v10_is_internal 24070656
 P _obja/1/_v10_steers_with_gear 0
-P _obja/10/_obj_flags 7
-P _obja/10/_v10_att_file_stl TIGRE_HMD.obj
+P _obja/10/_obj_flags 2
+P _obja/10/_v10_att_file_stl TIGRE_rotorsTail.obj
 P _obja/10/_v10_att_part -1
 P _obja/10/_v10_att_phi_ref 0.0
 P _obja/10/_v10_att_psi_ref 0.0
@@ -399,6 +399,17 @@ P _obja/10/_v10_att_y_acf_prt_ref 0.0
 P _obja/10/_v10_att_z_acf_prt_ref 0.0
 P _obja/10/_v10_is_internal 268496912
 P _obja/10/_v10_steers_with_gear 0
+P _obja/11/_obj_flags 7
+P _obja/11/_v10_att_file_stl TIGRE_HMD.obj
+P _obja/11/_v10_att_part -1
+P _obja/11/_v10_att_phi_ref 0.0
+P _obja/11/_v10_att_psi_ref 0.0
+P _obja/11/_v10_att_the_ref 0.0
+P _obja/11/_v10_att_x_acf_prt_ref 0.0
+P _obja/11/_v10_att_y_acf_prt_ref 0.0
+P _obja/11/_v10_att_z_acf_prt_ref 0.0
+P _obja/11/_v10_is_internal 268496912
+P _obja/11/_v10_steers_with_gear 0
 P _obja/2/_obj_flags 5
 P _obja/2/_v10_att_file_stl TIGRE_cabin.obj
 P _obja/2/_v10_att_part -1
@@ -443,8 +454,8 @@ P _obja/5/_v10_att_y_acf_prt_ref 0.0
 P _obja/5/_v10_att_z_acf_prt_ref 0.0
 P _obja/5/_v10_is_internal 3
 P _obja/5/_v10_steers_with_gear 0
-P _obja/6/_obj_flags 2061
-P _obja/6/_v10_att_file_stl TIGRE_cockpit_INT.obj
+P _obja/6/_obj_flags 3
+P _obja/6/_v10_att_file_stl TIGRE_perspex_INT.obj
 P _obja/6/_v10_att_part -1
 P _obja/6/_v10_att_phi_ref 0.0
 P _obja/6/_v10_att_psi_ref 0.0
@@ -452,10 +463,10 @@ P _obja/6/_v10_att_the_ref 0.0
 P _obja/6/_v10_att_x_acf_prt_ref 0.0
 P _obja/6/_v10_att_y_acf_prt_ref 0.0
 P _obja/6/_v10_att_z_acf_prt_ref 0.0
-P _obja/6/_v10_is_internal 12678408
+P _obja/6/_v10_is_internal 268496912
 P _obja/6/_v10_steers_with_gear 0
-P _obja/7/_obj_flags 5
-P _obja/7/_v10_att_file_stl mirror.obj
+P _obja/7/_obj_flags 2061
+P _obja/7/_v10_att_file_stl TIGRE_cockpit_INT.obj
 P _obja/7/_v10_att_part -1
 P _obja/7/_v10_att_phi_ref 0.0
 P _obja/7/_v10_att_psi_ref 0.0
@@ -463,10 +474,10 @@ P _obja/7/_v10_att_the_ref 0.0
 P _obja/7/_v10_att_x_acf_prt_ref 0.0
 P _obja/7/_v10_att_y_acf_prt_ref 0.0
 P _obja/7/_v10_att_z_acf_prt_ref 0.0
-P _obja/7/_v10_is_internal 268496912
+P _obja/7/_v10_is_internal 12678408
 P _obja/7/_v10_steers_with_gear 0
-P _obja/8/_obj_flags 26
-P _obja/8/_v10_att_file_stl TIGRE_rotorsMain.obj
+P _obja/8/_obj_flags 5
+P _obja/8/_v10_att_file_stl mirror.obj
 P _obja/8/_v10_att_part -1
 P _obja/8/_v10_att_phi_ref 0.0
 P _obja/8/_v10_att_psi_ref 0.0
@@ -476,8 +487,8 @@ P _obja/8/_v10_att_y_acf_prt_ref 0.0
 P _obja/8/_v10_att_z_acf_prt_ref 0.0
 P _obja/8/_v10_is_internal 268496912
 P _obja/8/_v10_steers_with_gear 0
-P _obja/9/_obj_flags 2
-P _obja/9/_v10_att_file_stl TIGRE_rotorsTail.obj
+P _obja/9/_obj_flags 26
+P _obja/9/_v10_att_file_stl TIGRE_rotorsMain.obj
 P _obja/9/_v10_att_part -1
 P _obja/9/_v10_att_phi_ref 0.0
 P _obja/9/_v10_att_psi_ref 0.0
@@ -487,7 +498,7 @@ P _obja/9/_v10_att_y_acf_prt_ref 0.0
 P _obja/9/_v10_att_z_acf_prt_ref 0.0
 P _obja/9/_v10_is_internal 268496912
 P _obja/9/_v10_steers_with_gear 0
-P _obja/count 11
+P _obja/count 12
 P _panel_inst_3d 0
 P _part/0/_bot_s1 0.0
 P _part/0/_bot_s2 0.015625000
@@ -12230,7 +12241,7 @@ P _part/85/_part_specs_invis 1
 P _part/85/_part_tex 0
 P _part/85/_part_the 0.0
 P _part/85/_part_x -3.925713778
-P _part/85/_part_y 1.780499816
+P _part/85/_part_y 1.780499935
 P _part/85/_part_z -5.149526596
 P _part/85/_patt_con 0
 P _part/85/_patt_prt 0
@@ -13699,7 +13710,7 @@ P _part/86/_part_specs_invis 1
 P _part/86/_part_tex 0
 P _part/86/_part_the 0.0
 P _part/86/_part_x 3.925713778
-P _part/86/_part_y 1.780499816
+P _part/86/_part_y 1.780499935
 P _part/86/_part_z -5.149526596
 P _part/86/_patt_con 0
 P _part/86/_patt_prt 0
@@ -15168,7 +15179,7 @@ P _part/89/_part_specs_invis 1
 P _part/89/_part_tex 0
 P _part/89/_part_the 0.0
 P _part/89/_part_x 0.0
-P _part/89/_part_y 1.628765941
+P _part/89/_part_y 1.628766060
 P _part/89/_part_z 19.947505951
 P _part/89/_patt_con 0
 P _part/89/_patt_prt 0
@@ -21458,7 +21469,7 @@ P acf/_nom_bat_volt 26.0
 P acf/_nom_fuelP 30.0
 P acf/_nom_gen_volt 28.0
 P acf/_nom_oilP 115.0
-P acf/_notes Version 2019-06-10 vB13
+P acf/_notes Version 2019-06-10 vB14
 P acf/_num_batteries 1
 P acf/_num_braking_wheels 0.0
 P acf/_num_buses 1
