@@ -117,16 +117,16 @@ P _door/9/_type 0
 P _door/count 20
 P _engn/0/_engn_clutch_EQ 0
 P _engn/0/_engn_freewheels 1
-P _engn/0/_exhaust_os_xyz/0 -0.600000024
-P _engn/0/_exhaust_os_xyz/1 7.199999809
-P _engn/0/_exhaust_os_xyz/2 4.0
+P _engn/0/_exhaust_os_xyz/0 -1.279999971
+P _engn/0/_exhaust_os_xyz/1 3.769999981
+P _engn/0/_exhaust_os_xyz/2 -9.729999542
 P _engn/0/_exhaust_os_xyz/count 3
 P _engn/0/_type TRB_FRE
 P _engn/1/_engn_clutch_EQ 0
 P _engn/1/_engn_freewheels 1
-P _engn/1/_exhaust_os_xyz/0 0.0
-P _engn/1/_exhaust_os_xyz/1 0.0
-P _engn/1/_exhaust_os_xyz/2 0.0
+P _engn/1/_exhaust_os_xyz/0 3.089999914
+P _engn/1/_exhaust_os_xyz/1 0.660000026
+P _engn/1/_exhaust_os_xyz/2 16.450000763
 P _engn/1/_exhaust_os_xyz/count 3
 P _engn/1/_type TRB_FRE
 P _engn/count 8
@@ -224,7 +224,7 @@ P _gear/4/_lonE -30.0
 P _gear/4/_lonN -30.0
 P _gear/4/_lonR 0.0
 P _gear/4/_scon 3194.627197266
-P _gear/4/_stat_def 0.796778262
+P _gear/4/_stat_def 0.796778321
 P _gear/4/_steerdeg_hispeed 0.0
 P _gear/4/_steerdeg_lospeed 0.0
 P _gear/4/_strut_comp 0.0
@@ -15190,7 +15190,7 @@ P _part/89/_part_specs_invis 1
 P _part/89/_part_tex 0
 P _part/89/_part_the 0.0
 P _part/89/_part_x 0.0
-P _part/89/_part_y 1.628765941
+P _part/89/_part_y 1.628766060
 P _part/89/_part_z 19.947505951
 P _part/89/_patt_con 0
 P _part/89/_patt_prt 0
@@ -18943,6 +18943,36 @@ P _wing/19/_yawbr/8 0
 P _wing/19/_yawbr/9 0
 P _wing/19/_yawbr/count 10
 P _wing/count 56
+P _wpna/0/_v10_att_file_stl gun-M39-20mm-F5.wpn
+P _wpna/0/_v10_att_part -1
+P _wpna/0/_v10_att_phi_ref 0.0
+P _wpna/0/_v10_att_psi_ref 0.0
+P _wpna/0/_v10_att_the_ref 0.0
+P _wpna/0/_v10_att_x_acf_prt_ref 0.0
+P _wpna/0/_v10_att_y_acf_prt_ref 2.591863632
+P _wpna/0/_v10_att_z_acf_prt_ref -14.402886391
+P _wpna/0/_v10_is_internal 0
+P _wpna/0/_v10_steers_with_gear 0
+P _wpna/1/_v10_att_file_stl gun-M39-20mm-F5.wpn
+P _wpna/1/_v10_att_part -1
+P _wpna/1/_v10_att_phi_ref 0.0
+P _wpna/1/_v10_att_psi_ref 0.0
+P _wpna/1/_v10_att_the_ref 0.0
+P _wpna/1/_v10_att_x_acf_prt_ref -4.691600800
+P _wpna/1/_v10_att_y_acf_prt_ref 4.658792496
+P _wpna/1/_v10_att_z_acf_prt_ref 2.296587944
+P _wpna/1/_v10_is_internal 0
+P _wpna/1/_v10_steers_with_gear 0
+P _wpna/2/_v10_att_file_stl gun-M39-20mm-F5.wpn
+P _wpna/2/_v10_att_part -1
+P _wpna/2/_v10_att_phi_ref 0.0
+P _wpna/2/_v10_att_psi_ref 0.0
+P _wpna/2/_v10_att_the_ref 0.0
+P _wpna/2/_v10_att_x_acf_prt_ref 4.691600800
+P _wpna/2/_v10_att_y_acf_prt_ref 4.658792496
+P _wpna/2/_v10_att_z_acf_prt_ref 2.296587944
+P _wpna/2/_v10_is_internal 0
+P _wpna/2/_v10_steers_with_gear 0
 P _wpna/count 24
 P acf/_AShi_G_k 0.0
 P acf/_AShi_Gdot_k 0.0
@@ -21099,7 +21129,7 @@ P acf/_esys_bus_bit_add/rel_startr6 0
 P acf/_esys_bus_bit_add/rel_startr7 0
 P acf/_esys_bus_bit_add/rel_xpndr 0
 P acf/_esys_bus_bit_add/rel_yaw_damp 1
-P acf/_exhaust_rat 1.0
+P acf/_exhaust_rat 5.0
 P acf/_face_jet 1.0
 P acf/_face_rocket 0.0
 P acf/_fadec_EQ_mixture 0
@@ -21480,7 +21510,7 @@ P acf/_nom_bat_volt 26.0
 P acf/_nom_fuelP 30.0
 P acf/_nom_gen_volt 28.0
 P acf/_nom_oilP 115.0
-P acf/_notes Version 2019-06-10 vB15
+P acf/_notes Version 2019-06-12 v 1-0-RC
 P acf/_num_batteries 1
 P acf/_num_braking_wheels 0.0
 P acf/_num_buses 1
@@ -22728,5 +22758,23 @@ gen_text gen_text.png
   KEY_FRAME 1.000000 1.000000
   OFFSET_X 3
   OFFSET_Y 0.000000
+
+wpn_sel_gun gun.png
+  POS 220.000000 554.000000
+  DATAREF 
+  SIZE 1.200000
+  LIGHT_MODE MECHANICAL
+  LIGHT_RHEOSTAT 0
+  KEY_FRAME 0.000000 0.000000 1.000000
+  KEY_FRAME 1.000000 1.000000
+
+wpn_ind_bull ind_bullets.png
+  POS 208.000000 597.000000
+  DATAREF 
+  SIZE 1.800000
+  LIGHT_MODE MECHANICAL
+  LIGHT_RHEOSTAT 0
+  KEY_FRAME 0.000000 0.000000 1.000000
+  KEY_FRAME 1.000000 1.000000
 
 PANEL_3D_END
