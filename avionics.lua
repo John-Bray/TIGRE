@@ -2,42 +2,49 @@ size = { 1024, 1024 }  --We declare here the image size we are using
 panelWidth3d  = 1024  -- I don't know why, but without these lines you cannot get the coords to work right
 panelHeight3d = 1024
 
+-- Custom properties + commands
+
 defineProperty("screen1_mode",createGlobalPropertyf("jb/sasl/MFD/1/mode"))  -- 0=off, 1= PFD,  2=NAV,  3=AC (engines} or whatever, etc
 set(screen1_mode, 1)
-
 defineProperty("screen2_mode",createGlobalPropertyf("jb/sasl/MFD/2/mode"))  
 set(screen2_mode,3)
-
-
-
 defineProperty("iPad1_mode",createGlobalPropertyf("jb/sasl/iPads/1/mode"))  -- 0=off, 1= EFIS or whatever, etc
 set(iPad1_mode, -1)
-
 defineProperty("iPadVisibility",createGlobalPropertyi("jb/sasl/iPads/visible"))  -- 0=off, 1= ON (INT)
 set(iPadVisibility,  1) 
-
 defineProperty("HudHidden",createGlobalPropertyi("jb/sasl/Hud/hidden"))  -- 0=visible, 1= hidden (killed) (INT)
 set(HudHidden,  0) 
-
+defineProperty("jb_yawControl",  createGlobalPropertyi("jb/sasl/afcs/yawControl"))  -- 0=off, 1= ON (INT)
 createProp("jb/sasl/currentWaypointID", "int", 0);
 defineProperty("currentWaypointID",   globalPropertyi("jb/sasl/currentWaypointID"))
 
-createProp("jb/sasl/cwpTest", "int", 0);
+createProp("jb/sasl/cwpTest", "int", 0);  -- NOT USED IN TIGRE ?
 defineProperty("cwpTest",   globalPropertyi("jb/sasl/cwpTest"))
 set(cwpTest,  0) 
+
+--createProp("jb/sasl/hoverMode", "int", 0);
+--defineProperty("jb_hoverMode",   globalPropertyi("jb/sasl/hoverMode"))
+--createProp("jb/sasl/torqueReading","float", 0.0)
+--defineProperty("jb_torqueReading",globalPropertyf("jb/sasl/torqueReading"))
+--createProp    ("jb/sasl/climbAngle","float", 0.0)
+--defineProperty("jb_climbAngle",    globalPropertyf("jb/sasl/climbAngle"))
 
 createCommand("jb/sasl/iPads/toggle", "show_hide_iPads") -- jb/sasl/iPads/visible
 createCommand("jb/sasl/yawDamper/toggle", "auto pedals ON/OFF")  -- jb_yawControl
 createCommand("jb/sasl/hud/toggle", "show hide FlightPathMarker") -- jb/sasl/Hud/hidden
-
 createCommand("jb/sasl/view/tilt_right", "head tilt to right") -- sim/graphics/view/pilots_head_phi﻿﻿﻿﻿﻿﻿    float    y    degrees    Position of the pilot's head roll﻿﻿﻿﻿﻿﻿﻿﻿﻿
 createCommand("jb/sasl/view/tilt_left", "head tilt to left")
 defineProperty(                 "headRoll",  globalPropertyf("sim/graphics/view/pilots_head_phi"))
+defineProperty(                 "headHdg",  globalPropertyf("sim/graphics/view/pilots_head_psi"))
+defineProperty(                 "headPitch",  globalPropertyf("sim/graphics/view/pilots_head_the"))
+--sim/graphics/view/pilots_head_psi	float	y	degrees	Position of pilot's head heading
+--sim/graphics/view/pilots_head_the	float	y	degrees	Position of pilot's head pitch
+--sim/graphics/view/pilots_head_phi	float	y	degrees	Position of the pilot's head roll'
+
 
 
 defineProperty("runTime",  globalPropertyf("sim/time/total_running_time_sec"))
 lastCommandClick = get(runTime)
-
 
 --Power
 defineProperty(                 "IAS",  globalPropertyf("sim/flightmodel/position/indicated_airspeed"))
@@ -59,7 +66,6 @@ defineProperty("pitchCyclic",  globalPropertyf("sim/joystick/yoke_pitch_ratio"))
 defineProperty("rollCyclic",  globalPropertyf("sim/joystick/yoke_roll_ratio"))
 
 -- Yaw
-defineProperty("jb_yawControl",  createGlobalPropertyi("jb/sasl/afcs/yawControl"))  -- 0=off, 1= ON (INT)
 defineProperty(          "yawRate", globalPropertyf("sim/flightmodel/position/R"))
 defineProperty(        "yawForce",  globalPropertyf("sim/flightmodel/forces/N_total"))
 defineProperty(             "pedals",  globalPropertyf("sim/cockpit2/controls/yoke_heading_ratio"))
@@ -81,16 +87,6 @@ defineProperty(             "viewPointAFT",    globalPropertyf("sim/graphics/vie
 --WTF ????? FEET??
 defineProperty(             "acf_cgY_original", globalPropertyf("sim/aircraft/weight/acf_cgY_original")) -- (UP) 1.00m
 defineProperty(             "acf_cgZ_original", globalPropertyf("sim/aircraft/weight/acf_cgZ_original")) --  (AFT) 0.00m
-
-
---createProp("jb/sasl/hoverMode", "int", 0);
---defineProperty("jb_hoverMode",   globalPropertyi("jb/sasl/hoverMode"))
-
---createProp("jb/sasl/torqueReading","float", 0.0)
---defineProperty("jb_torqueReading",globalPropertyf("jb/sasl/torqueReading"))
-
---createProp    ("jb/sasl/climbAngle","float", 0.0)
---defineProperty("jb_climbAngle",    globalPropertyf("jb/sasl/climbAngle"))
 
 defineProperty(             "panelLight1", globalPropertyf("sim/cockpit2/electrical/panel_brightness_ratio[1]"))
 defineProperty(              "panelLight2", globalPropertyf("sim/cockpit2/electrical/panel_brightness_ratio[2]"))
@@ -138,10 +134,36 @@ defineProperty(           "m_agl", globalPropertyf("sim/flightmodel/position/y_a
 
 defineProperty(           "Hdg", globalPropertyf("sim/flightmodel/position/mag_psi"))
 
-
-
 --defineProperty("alt_hold",  globalPropertyf("sim/cockpit2/autopilot/altitude_dial_ft"))          -- the altitude we want to hold
 --defineProperty("altitude",  globalPropertyf("sim/cockpit2/gauges/indicators/altitude_ft_pilot")) -- the altiltude we are now
+
+-- WEAPONS DATAREFS
+-- sim/cockpit2/weapons/gun_offset_heading_ratio	float	y	ratio	Heading offset of the gun from within its maximum heading range
+-- sim/cockpit2/weapons/gun_offset_pitch_ratio	float	y	ratio	Pitch offset of the gun from within its maximum pitch range
+--sim/weapons/gun_del_psi_deg_max	float[25]	y	???	Aimable guns for c130 Spectre, etc
+--sim/weapons/gun_del_the_deg_max	float[25]	y	???	Aimable guns for c130 Spectre, etc
+
+defineProperty(           "gunHdgMax",    globalPropertyf("sim/weapons/gun_del_psi_deg_max"))
+defineProperty(           "gunPitchMax",  globalPropertyf("sim/weapons/gun_del_the_deg_max"))
+
+defineProperty(            "gunHdgRatio", globalPropertyf("sim/cockpit2/weapons/gun_offset_heading_ratio"))
+defineProperty(           "gunPitchRatio", globalPropertyf("sim/cockpit2/weapons/gun_offset_pitch_ratio"))
+ 
+ 
+defineProperty("gunHdgAngle",createGlobalPropertyf("jb/sasl/weapons/gunHdgAngle"))  
+defineProperty("gunPitchAngle",createGlobalPropertyf("jb/sasl/weapons/gunPitchAngle"))  
+set(gunHdgAngle,  0.0)
+set(gunPitchAngle, 0.0)
+set(headHdg, 0.0)
+set(headPitch, 0.0)
+
+defineProperty("guns_armed",createGlobalPropertyf("sim/cockpit/weapons/guns_armed"))  
+ set(guns_armed, 0)
+
+
+
+
+ 
  
 font_Sans10=loadFont('custom avionics/MS_Sans10.fnt')  
 font_Sans12=loadFont('custom avionics/MS_Sans12.fnt')  
@@ -153,25 +175,25 @@ font_led_32=loadFont('custom avionics/JB_LED_7S_32.fnt')
 
 
 components = {
-
 	commands    {position={     0, 256, 256, 110} },
-	HMD             {position={      0,     0,   512, 512} },
 	Radios           {position={ 512,    256, 440, 256} },
 	screen_1       {position={     0, 768, 256, 256} },
-	
-	barometer      {position={  512, 256, 440, 256} }
-	
+	barometer      {position={  512, 256, 440, 256} },
+	HMD             {position={      0,     0,   512, 512} }
 
+	
 }
 
---iPad0             {position={      0,  416, 256, 192} },
---iPad1             {position={  256,  416, 256, 192} },
+-- iPad0             {position={      0,  416, 256, 192} },
+--i Pad1             {position={  256,  416, 256, 192} },
 --	iPad2             {position={  512,  416, 256, 192} },
 --	iPad3             {position={  756,  416, 256, 192} },
 	
 set(panelLight1, 1)
 set(panelLight2, 1)
 
+--saslReload = findCommand("sasl/reload")  
+--commandOnce(saslReload)
 
 -- =======================================================================================
 --             returns {distance_nm, degreesTrue, degreesMag} from a start and end lat/lon

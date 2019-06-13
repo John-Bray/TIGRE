@@ -1,0 +1,179 @@
+AC3Db
+MATERIAL "ac3dmat1" rgb 1 1 1  amb 0.2 0.2 0.2  emis 0 0 0  spec 0.2 0.2 0.2  shi 128  trans 0
+MATERIAL "ac3dmat5" rgb 1 1 0  amb 0.2 0.2 0.2  emis 0 0 0  spec 0.2 0.2 0.2  shi 128  trans 0
+OBJECT world
+kids 1
+OBJECT group
+name "bladesMainHighSpeed"
+loc -0.0185875 1.66744 -0.0152212
+data 40
+layer_group=objects
+layer_group_offset=0
+kids 1
+OBJECT group
+name "Default LOD"
+kids 1
+OBJECT group
+name "ANIMATION"
+data 10
+animated=1
+kids 4
+OBJECT poly
+name "show"
+loc 0.0185875 2.35776 0.178573
+data 132
+anim_type=4
+anim_keyframe_count=2
+value0=13.000000
+value1=500.000000
+dataref=sim/flightmodel/engine/POINT_tacrad[0]
+poly_os=0.000000
+texture "TIGRE_rotorsMain.png"
+crease 45.000000
+numvert 2
+2.98023e-08 0.0283041 -0.022164
+2.98023e-08 0.0283041 -0.022164
+numsurf 1
+SURF 0x32
+mat 1
+refs 2
+1 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "hide"
+loc 0.0185875 2.35776 0.178573
+data 115
+anim_type=5
+anim_keyframe_count=2
+value0=-10.000000
+value1=13.000000
+dataref=sim/flightmodel/engine/POINT_tacrad[0]
+texture "TIGRE_rotorsMain.png"
+crease 45.000000
+numvert 2
+2.98023e-08 0.0283041 -0.022164
+2.98023e-08 0.0283041 -0.022164
+numsurf 1
+SURF 0x32
+mat 1
+refs 2
+0 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "rotateBlades"
+loc 0.0192445 1.43051e-06 -0.0136675
+data 161
+anim_type=1
+anim_keyframe_count=2
+value0=0.000000
+angle0=0.000000
+value1=359.000000
+angle1=-72.000000
+dataref=sim/flightmodel2/engines/prop_rotation_angle_deg[0]
+texture "TIGRE_rotorsMain.png"
+crease 45.000000
+numvert 2
+-0.000576019 -0.999993 0.0287724
+-0.000737906 1.00001 0.029006
+numsurf 1
+SURF 0x32
+mat 1
+refs 2
+1 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "disk"
+loc 0.0185879 1.97001 0.0152219
+texture "TIGRE_rotorsMain.png"
+crease 45.000000
+numvert 13
+0 0 0
+6.9 -4.76837e-07 -2.04055e-06
+5.97557 -4.76837e-07 3.45001
+3.44999 -7.15256e-07 5.97558
+-6.75436e-06 -7.15256e-07 6.9
+-3.45 -7.15256e-07 5.97558
+-5.97556 -7.15256e-07 3.45001
+-6.9 2.38419e-07 2.51509e-06
+-5.97557 2.38419e-07 -3.45001
+-3.45 4.76837e-07 -5.97558
+6.65944e-06 2.38419e-07 -6.9
+3.45 2.38419e-07 -5.97558
+5.97556 2.38419e-07 -3.45001
+numsurf 12
+SURF 0x30
+mat 0
+refs 3
+1 1 0.5
+12 0.933012 0.75
+0 0.5 0.5
+SURF 0x30
+mat 0
+refs 3
+2 0.933013 0.25
+1 1 0.5
+0 0.5 0.5
+SURF 0x30
+mat 0
+refs 3
+3 0.75 0.0669874
+2 0.933013 0.25
+0 0.5 0.5
+SURF 0x30
+mat 0
+refs 3
+4 0.5 0
+3 0.75 0.0669874
+0 0.5 0.5
+SURF 0x30
+mat 0
+refs 3
+5 0.25 0.0669873
+4 0.5 0
+0 0.5 0.5
+SURF 0x30
+mat 0
+refs 3
+6 0.0669875 0.25
+5 0.25 0.0669873
+0 0.5 0.5
+SURF 0x30
+mat 0
+refs 3
+7 0 0.5
+6 0.0669875 0.25
+0 0.5 0.5
+SURF 0x30
+mat 0
+refs 3
+8 0.0669873 0.75
+7 0 0.5
+0 0.5 0.5
+SURF 0x30
+mat 0
+refs 3
+9 0.25 0.933013
+8 0.0669873 0.75
+0 0.5 0.5
+SURF 0x30
+mat 0
+refs 3
+10 0.5 1
+9 0.25 0.933013
+0 0.5 0.5
+SURF 0x30
+mat 0
+refs 3
+11 0.75 0.933013
+10 0.5 1
+0 0.5 0.5
+SURF 0x30
+mat 0
+refs 3
+12 0.933012 0.75
+11 0.75 0.933013
+0 0.5 0.5
+kids 0

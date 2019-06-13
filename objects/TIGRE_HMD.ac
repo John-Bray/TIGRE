@@ -1,0 +1,863 @@
+AC3Db
+MATERIAL "ac3dmat1" rgb 1 1 1  amb 0.2 0.2 0.2  emis 0 0 0  spec 0.2 0.2 0.2  shi 128  trans 0
+MATERIAL "ac3dmat5" rgb 1 1 0  amb 0.2 0.2 0.2  emis 0 0 0  spec 0.2 0.2 0.2  shi 128  trans 0
+MATERIAL "ac3dmat7" rgb 0.270588 0.52549 0.454902  amb 0.2 0.2 0.2  emis 0 0 0  spec 0.2 0.2 0.2  shi 128  trans 0
+MATERIAL "" rgb 0.925 1 0.875  amb 0.2 0.2 0.2  emis 0.11 0.31 0.102  spec 0.2 0.2 0.2  shi 128  trans 0
+OBJECT world
+kids 2
+OBJECT group
+name "flightPathMarker"
+kids 1
+OBJECT group
+name "Default LOD"
+kids 1
+OBJECT group
+name "ANIMATION_pathMarker"
+data 10
+animated=1
+kids 14
+OBJECT poly
+name "translate_acf_cgY_original"
+data 129
+anim_type=2
+anim_keyframe_count=2
+anim_loop=0.000000
+value0=0.000000
+value1=6.561680
+dataref=sim/aircraft/weight/acf_cgY_original
+texture "../cockpit_3d/-PANELS-/Panel.png"
+crease 45.000000
+numvert 2
+0 0 0
+0 2 0
+numsurf 1
+SURF 0x32
+mat 2
+refs 2
+0 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "translate_viewUP"
+data 124
+anim_type=2
+anim_keyframe_count=2
+anim_loop=0.000000
+value0=0.000000
+value1=2.000000
+dataref=sim/graphics/view/pilots_head_y
+texture "../cockpit_3d/-PANELS-/Panel.png"
+crease 45.000000
+numvert 2
+0 0 0
+0 2 0
+numsurf 1
+SURF 0x32
+mat 2
+refs 2
+0 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "translate_acf_cgZ_original"
+loc 0 0 -1
+data 177
+anim_type=2
+anim_keyframe_count=2
+anim_loop=0.000000
+value0=0.000000
+value1=3.281000
+dataref=sim/aircraft/weight/acf_cgZ_original
+value2=3.281000
+angle2=0.000000
+angle1=0.000000
+texture "../cockpit_3d/-PANELS-/Panel.png"
+crease 45.000000
+numvert 2
+0 0 0
+0 0 1
+numsurf 1
+SURF 0x32
+mat 1
+refs 2
+0 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "translate_viewAFT"
+loc 0 2.38419e-07 -4
+data 125
+anim_type=2
+anim_keyframe_count=2
+anim_loop=0.000000
+value0=0.000000
+value1=-4.000000
+dataref=sim/graphics/view/pilots_head_z
+texture "../cockpit_3d/-PANELS-/Panel.png"
+crease 45.000000
+numvert 2
+0 -3.57628e-07 4
+0 0 0
+numsurf 1
+SURF 0x32
+mat 1
+refs 2
+0 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "translate_viewSTBD"
+data 124
+anim_type=2
+anim_keyframe_count=2
+anim_loop=0.000000
+value0=0.000000
+value1=1.000000
+dataref=sim/graphics/view/pilots_head_x
+texture "../cockpit_3d/-PANELS-/Panel.png"
+crease 45.000000
+numvert 2
+0 0 0
+1 0 0
+numsurf 1
+SURF 0x32
+mat 1
+refs 2
+0 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "centreLine"
+loc 0 0 3.72529e-09
+data 117
+poly_os=0.000000
+blend=-1.000000
+hard_surf=object
+deck=0
+mod_lit=0
+wall=0
+draw_disable=0
+manip_type=0
+use_materials=1
+texture "../cockpit_3d/-PANELS-/Panel.png"
+crease 45.000000
+numvert 4
+-0.000244 0.012497 -0.25
+0.000244 0.012497 -0.25
+-0.000244 -0.012497 -0.25
+0.000244 -0.012497 -0.25
+numsurf 2
+SURF 0x30
+mat 3
+refs 3
+2 0.0159182 0.474633
+1 0.0160254 0.491392
+0 0.0159182 0.491392
+SURF 0x30
+mat 3
+refs 3
+1 0.0160254 0.491392
+2 0.0159182 0.474633
+3 0.0160254 0.474633
+kids 0
+OBJECT poly
+name "rotate_view_pitch"
+loc -5.96046e-08 0 0
+data 159
+anim_type=1
+anim_keyframe_count=2
+anim_loop=0.000000
+value0=-10.000000
+angle0=10.000000
+value1=10.000000
+angle1=-10.000000
+dataref=sim/graphics/view/view_pitch
+texture "../cockpit_3d/-PANELS-/Panel.png"
+crease 45.000000
+numvert 2
+-1 0 0
+1 0 0
+numsurf 1
+SURF 0x32
+mat 1
+refs 2
+0 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "rotate_pilots_head_the"
+data 164
+anim_type=1
+anim_keyframe_count=2
+anim_loop=0.000000
+value0=-10.000000
+angle0=-10.000000
+value1=10.000000
+angle1=10.000000
+dataref=sim/graphics/view/pilots_head_the
+texture "../cockpit_3d/-PANELS-/Panel.png"
+crease 45.000000
+numvert 2
+-1 0 0
+1 0 0
+numsurf 1
+SURF 0x32
+mat 1
+refs 2
+0 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "rotate_true_phi"
+data 164
+anim_type=1
+anim_keyframe_count=2
+anim_loop=0.000000
+value0=-90.000000
+angle0=-90.000000
+value1=90.000000
+angle1=90.000000
+dataref=sim/flightmodel/position/true_phi
+texture "../cockpit_3d/-PANELS-/Panel.png"
+crease 45.000000
+numvert 2
+0 0 -1
+0 0 1
+numsurf 1
+SURF 0x32
+mat 1
+refs 2
+0 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "rotate_ground_track_mag_pilot"
+data 184
+anim_type=1
+anim_keyframe_count=2
+anim_loop=0.000000
+value0=-10.000000
+angle0=10.000000
+value1=10.000000
+angle1=-10.000000
+dataref=sim/cockpit2/gauges/indicators/ground_track_mag_pilot
+texture "../cockpit_3d/-PANELS-/Panel.png"
+crease 45.000000
+numvert 2
+0 -1 0
+0 1 0
+numsurf 1
+SURF 0x32
+mat 1
+refs 2
+0 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "rotate_mag_psi"
+data 163
+anim_type=1
+anim_keyframe_count=2
+anim_loop=0.000000
+value0=-10.000000
+angle0=-10.000000
+value1=10.000000
+angle1=10.000000
+dataref=sim/flightmodel/position/mag_psi
+texture "../cockpit_3d/-PANELS-/Panel.png"
+crease 45.000000
+numvert 2
+0 -1 0
+0 1 0
+numsurf 1
+SURF 0x32
+mat 1
+refs 2
+0 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "horizonLine"
+loc 0 0 3.72529e-09
+data 117
+poly_os=0.000000
+blend=-1.000000
+hard_surf=object
+deck=0
+mod_lit=0
+wall=0
+draw_disable=0
+manip_type=0
+use_materials=1
+texture "../cockpit_3d/-PANELS-/Panel.png"
+crease 45.000000
+numvert 8
+-0.056 -0.000243992 -0.25
+-0.056 0.000243992 -0.25
+-0.005997 -0.000243992 -0.25
+-0.005997 0.000243992 -0.25
+0.005997 -0.000243992 -0.25
+0.005997 0.000243992 -0.25
+0.056 -0.000243992 -0.25
+0.056 0.000243992 -0.25
+numsurf 4
+SURF 0x30
+mat 3
+refs 3
+2 0.0146526 0.482849
+1 0.00365348 0.483177
+0 0.00365348 0.482849
+SURF 0x30
+mat 3
+refs 3
+1 0.00365348 0.483177
+2 0.0146526 0.482849
+3 0.0146526 0.483177
+SURF 0x30
+mat 3
+refs 3
+6 0.0282905 0.482849
+5 0.017291 0.483177
+4 0.017291 0.482849
+SURF 0x30
+mat 3
+refs 3
+5 0.017291 0.483177
+6 0.0282905 0.482849
+7 0.0282905 0.483177
+kids 0
+OBJECT poly
+name "rotate_vpath"
+loc 1.19209e-07 0 0
+data 161
+anim_type=1
+anim_keyframe_count=2
+anim_loop=0.000000
+value0=-10.000000
+angle0=-10.000000
+value1=10.000000
+angle1=10.000000
+dataref=sim/flightmodel/position/vpath
+texture "../cockpit_3d/-PANELS-/Panel.png"
+crease 45.000000
+numvert 2
+-1 0 0
+1 0 0
+numsurf 1
+SURF 0x32
+mat 1
+refs 2
+0 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "aircraftSymbol"
+loc 0 0 -0.025003
+data 117
+poly_os=0.000000
+blend=-1.000000
+hard_surf=object
+deck=0
+mod_lit=0
+wall=0
+draw_disable=0
+manip_type=0
+use_materials=1
+texture "../cockpit_3d/-PANELS-/Panel.png"
+crease 45.000000
+numvert 40
+-0.004608 0.00021401 -0.199997
+-0.004593 -0.000167996 -0.199997
+-0.002762 -0.000167996 -0.199997
+-0.002762 0.00021401 -0.199997
+-0.002594 -0.00105301 -0.199997
+-0.002274 -0.000930995 -0.199997
+-0.001984 -0.001968 -0.199997
+-0.001724 -0.00174001 -0.199997
+-0.001068 -0.00259399 -0.199997
+-0.000931 -0.002243 -0.199997
+0 -0.002808 -0.199997
+0 -0.00244099 -0.199997
+0 -0.002808 -0.199997
+0 -0.00244099 -0.199997
+0.000931 -0.002243 -0.199997
+0.001068 -0.002579 -0.199997
+0.001724 -0.00174001 -0.199997
+0.001968 -0.001984 -0.199997
+0.002274 -0.000930995 -0.199997
+-0.002579 0.001083 -0.199997
+-0.002441 0 -0.199997
+-0.002258 0.000946 -0.199997
+-0.001984 0.001984 -0.199997
+-0.00174 0.00174001 -0.199997
+-0.001083 0.002579 -0.199997
+-0.000946 0.002258 -0.199997
+0 0.002808 -0.199997
+0 0.00245699 -0.199997
+0.000946 0.00227401 -0.199997
+0.001068 0.002579 -0.199997
+0.00174 0.00174001 -0.199997
+0.001968 0.001984 -0.199997
+0.002258 0.000946 -0.199997
+0.002457 0 -0.199997
+0.002594 -0.001068 -0.199997
+0.002594 0.001068 -0.199997
+0.002762 0.000229001 -0.199997
+0.004608 0.000229001 -0.199997
+0.002777 -0.000137001 -0.199997
+0.004593 -0.000137001 -0.199997
+numsurf 38
+SURF 0x30
+mat 3
+refs 3
+1 0.00169408 0.48364
+3 0.00704178 0.484885
+0 0.00165425 0.484885
+SURF 0x30
+mat 3
+refs 3
+3 0.00704178 0.484885
+1 0.00169408 0.48364
+2 0.00704178 0.48364
+SURF 0x30
+mat 3
+refs 3
+3 0.00704178 0.484885
+2 0.00704178 0.48364
+4 0.00753301 0.480755
+SURF 0x30
+mat 3
+refs 3
+3 0.00704178 0.484885
+4 0.00753301 0.480755
+19 0.00757948 0.487721
+SURF 0x30
+mat 3
+refs 3
+19 0.00757948 0.487721
+4 0.00753301 0.480755
+20 0.00797909 0.484189
+SURF 0x30
+mat 3
+refs 3
+20 0.00797909 0.484189
+4 0.00753301 0.480755
+5 0.00846634 0.481154
+SURF 0x30
+mat 3
+refs 3
+5 0.00846634 0.481154
+4 0.00753301 0.480755
+6 0.00931734 0.477774
+SURF 0x30
+mat 3
+refs 3
+5 0.00846634 0.481154
+6 0.00931734 0.477774
+7 0.0100728 0.478508
+SURF 0x30
+mat 3
+refs 3
+7 0.0100728 0.478508
+6 0.00931734 0.477774
+8 0.0119885 0.475731
+SURF 0x30
+mat 3
+refs 3
+7 0.0100728 0.478508
+8 0.0119885 0.475731
+9 0.0123895 0.476869
+SURF 0x30
+mat 3
+refs 3
+9 0.0123895 0.476869
+8 0.0119885 0.475731
+10 0.0151111 0.475025
+SURF 0x30
+mat 3
+refs 3
+9 0.0123895 0.476869
+10 0.0151111 0.475025
+11 0.0151111 0.476222
+SURF 0x30
+mat 3
+refs 3
+15 0.0182284 0.475774
+13 0.0151111 0.476222
+12 0.0151111 0.475025
+SURF 0x30
+mat 3
+refs 3
+13 0.0151111 0.476222
+15 0.0182284 0.475774
+14 0.0178275 0.476869
+SURF 0x30
+mat 3
+refs 3
+14 0.0178275 0.476869
+15 0.0182284 0.475774
+16 0.0201442 0.478508
+SURF 0x30
+mat 3
+refs 3
+16 0.0201442 0.478508
+15 0.0182284 0.475774
+17 0.0208585 0.47772
+SURF 0x30
+mat 3
+refs 3
+16 0.0201442 0.478508
+17 0.0208585 0.47772
+18 0.0217506 0.481154
+SURF 0x30
+mat 3
+refs 3
+18 0.0217506 0.481154
+17 0.0208585 0.47772
+34 0.0226839 0.480707
+SURF 0x30
+mat 3
+refs 3
+18 0.0217506 0.481154
+34 0.0226839 0.480707
+33 0.022283 0.484189
+SURF 0x30
+mat 3
+refs 3
+19 0.00757948 0.487721
+21 0.00851679 0.487273
+22 0.00931734 0.490659
+SURF 0x30
+mat 3
+refs 3
+21 0.00851679 0.487273
+19 0.00757948 0.487721
+20 0.00797909 0.484189
+SURF 0x30
+mat 3
+refs 3
+22 0.00931734 0.490659
+21 0.00851679 0.487273
+23 0.0100276 0.489866
+SURF 0x30
+mat 3
+refs 3
+22 0.00931734 0.490659
+23 0.0100276 0.489866
+24 0.0119487 0.492599
+SURF 0x30
+mat 3
+refs 3
+24 0.0119487 0.492599
+23 0.0100276 0.489866
+25 0.0123483 0.491554
+SURF 0x30
+mat 3
+refs 3
+24 0.0119487 0.492599
+25 0.0123483 0.491554
+26 0.0151111 0.493349
+SURF 0x30
+mat 3
+refs 3
+26 0.0151111 0.493349
+25 0.0123483 0.491554
+27 0.0151111 0.492201
+SURF 0x30
+mat 3
+refs 3
+26 0.0151111 0.493349
+27 0.0151111 0.492201
+29 0.0182284 0.492599
+SURF 0x30
+mat 3
+refs 3
+29 0.0182284 0.492599
+27 0.0151111 0.492201
+28 0.0178739 0.491607
+SURF 0x30
+mat 3
+refs 3
+29 0.0182284 0.492599
+28 0.0178739 0.491607
+30 0.0201893 0.489866
+SURF 0x30
+mat 3
+refs 3
+29 0.0182284 0.492599
+30 0.0201893 0.489866
+31 0.0208585 0.490659
+SURF 0x30
+mat 3
+refs 3
+31 0.0208585 0.490659
+30 0.0201893 0.489866
+32 0.0217055 0.487273
+SURF 0x30
+mat 3
+refs 3
+31 0.0208585 0.490659
+32 0.0217055 0.487273
+35 0.0226839 0.487672
+SURF 0x30
+mat 3
+refs 3
+35 0.0226839 0.487672
+32 0.0217055 0.487273
+33 0.022283 0.484189
+SURF 0x30
+mat 3
+refs 3
+35 0.0226839 0.487672
+33 0.022283 0.484189
+34 0.0226839 0.480707
+SURF 0x30
+mat 3
+refs 3
+35 0.0226839 0.487672
+34 0.0226839 0.480707
+38 0.0232203 0.483742
+SURF 0x30
+mat 3
+refs 3
+35 0.0226839 0.487672
+38 0.0232203 0.483742
+36 0.0231752 0.484938
+SURF 0x30
+mat 3
+refs 3
+36 0.0231752 0.484938
+38 0.0232203 0.483742
+37 0.028568 0.484938
+SURF 0x30
+mat 3
+refs 3
+37 0.028568 0.484938
+38 0.0232203 0.483742
+39 0.0285229 0.483742
+kids 0
+OBJECT group
+name "mainPanel"
+kids 1
+OBJECT group
+name "Default LOD"
+kids 1
+OBJECT group
+name "ANIMATION_mainPanel"
+data 10
+animated=1
+kids 9
+OBJECT poly
+name "translate_acf_cgY_original"
+data 129
+anim_type=2
+anim_keyframe_count=2
+anim_loop=0.000000
+value0=0.000000
+value1=6.561680
+dataref=sim/aircraft/weight/acf_cgY_original
+texture "../cockpit_3d/-PANELS-/Panel.png"
+crease 45.000000
+numvert 2
+0 0 0
+0 2 0
+numsurf 1
+SURF 0x32
+mat 2
+refs 2
+0 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "translate_viewUP"
+data 124
+anim_type=2
+anim_keyframe_count=2
+anim_loop=0.000000
+value0=0.000000
+value1=2.000000
+dataref=sim/graphics/view/pilots_head_y
+texture "../cockpit_3d/-PANELS-/Panel.png"
+crease 45.000000
+numvert 2
+0 0 0
+0 2 0
+numsurf 1
+SURF 0x32
+mat 2
+refs 2
+0 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "translate_acf_cgZ_original"
+loc 0 0 -1
+data 177
+anim_type=2
+anim_keyframe_count=2
+anim_loop=0.000000
+value0=0.000000
+value1=3.281000
+dataref=sim/aircraft/weight/acf_cgZ_original
+value2=3.280840
+angle2=0.000000
+angle1=0.000000
+texture "../cockpit_3d/-PANELS-/Panel.png"
+crease 45.000000
+numvert 2
+0 0 0
+0 0 1
+numsurf 1
+SURF 0x32
+mat 1
+refs 2
+0 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "translate_viewAFT"
+loc 0 2.38419e-07 -4
+data 125
+anim_type=2
+anim_keyframe_count=2
+anim_loop=0.000000
+value0=0.000000
+value1=-4.000000
+dataref=sim/graphics/view/pilots_head_z
+texture "../cockpit_3d/-PANELS-/Panel.png"
+crease 45.000000
+numvert 2
+0 -3.57628e-07 4
+0 0 0
+numsurf 1
+SURF 0x32
+mat 1
+refs 2
+0 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "translate_viewSBD"
+data 124
+anim_type=2
+anim_keyframe_count=2
+anim_loop=0.000000
+value0=0.000000
+value1=1.000000
+dataref=sim/graphics/view/pilots_head_x
+texture "../cockpit_3d/-PANELS-/Panel.png"
+crease 45.000000
+numvert 2
+0 0 0
+1 0 0
+numsurf 1
+SURF 0x32
+mat 1
+refs 2
+0 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "rotate_pilots_head_psi"
+data 164
+anim_type=1
+anim_keyframe_count=2
+anim_loop=0.000000
+value0=-90.000000
+angle0=90.000000
+value1=90.000000
+angle1=-90.000000
+dataref=sim/graphics/view/pilots_head_psi
+texture "../cockpit_3d/-PANELS-/Panel.png"
+crease 45.000000
+numvert 2
+0 -1 0
+0 1 0
+numsurf 1
+SURF 0x32
+mat 1
+refs 2
+0 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "rotate_pilots_head_the"
+data 164
+anim_type=1
+anim_keyframe_count=2
+anim_loop=0.000000
+value0=-10.000000
+angle0=-10.000000
+value1=10.000000
+angle1=10.000000
+dataref=sim/graphics/view/pilots_head_the
+texture "../cockpit_3d/-PANELS-/Panel.png"
+crease 45.000000
+numvert 2
+-1 0 0
+1 0 0
+numsurf 1
+SURF 0x32
+mat 1
+refs 2
+0 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "rotate_pilots_head_phi"
+data 164
+anim_type=1
+anim_keyframe_count=2
+anim_loop=0.000000
+value0=-90.000000
+angle0=90.000000
+value1=90.000000
+angle1=-90.000000
+dataref=sim/graphics/view/pilots_head_phi
+texture "../cockpit_3d/-PANELS-/Panel.png"
+crease 45.000000
+numvert 2
+0 0 1
+0 0 -1
+numsurf 1
+SURF 0x32
+mat 1
+refs 2
+1 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "mainScreen"
+loc 0 0 -0.2
+texture "../cockpit_3d/-PANELS-/Panel.png"
+crease 45.000000
+numvert 12
+-0.0728 0.0364 0
+-0.0364 -0.0728 0
+-0.0728 -0.0364 0
+-0.0364 0.0728 0
+0.0364 0.0728 0
+0.0728 -0.0364 0
+0.0364 -0.0728 0
+0.0728 0.0364 0
+0.0728 0 0
+-0.0728 0 0
+0 -0.0728 0
+0 0.0728 0
+numsurf 1
+SURF 0x30
+mat 0
+refs 12
+0 0.00250001 0.37375
+9 0.00250001 0.25
+2 0.00250001 0.12625
+1 0.12625 0.00249998
+10 0.25 0.00249998
+6 0.37375 0.00249998
+5 0.4975 0.12625
+8 0.4975 0.25
+7 0.4975 0.37375
+4 0.37375 0.4975
+11 0.25 0.4975
+3 0.12625 0.4975
+kids 0
