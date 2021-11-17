@@ -142,6 +142,7 @@ function update()
 			set(gunPitchAngle, (  get(gunPitchRatio) *  get (gunPitchMax)  )  )
 
 			--set(gunHdgRatio, get(pedals))  -- for testing
+			
 	end
 	
 end
